@@ -21,7 +21,7 @@ class Scraper
   end
 
   def get_courses
-    course_offerings = doc.css("posts-holder")
+    self.get_page.css("posts-holder")
   end
 
   def make_courses
